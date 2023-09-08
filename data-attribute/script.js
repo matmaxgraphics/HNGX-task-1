@@ -29,7 +29,7 @@ function getUTCtime() {
   const currentMinutes = currentDate.getUTCMinutes();
   const currentSeconds = currentDate.getUTCSeconds();
   const currentMilliseconds = currentDate.getUTCMilliseconds();
-  const currentUtcTime = `${currentHour}:${currentMinutes}:${currentSeconds}:${currentMilliseconds} UTC`;
+  const currentUtcTime = `${currentHour},${currentMinutes},${currentSeconds},${currentMilliseconds} UTC`;
 
   utcTime.textContent = `${currentUtcTime}`;
 }
