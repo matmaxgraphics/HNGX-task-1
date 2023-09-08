@@ -14,7 +14,7 @@ function getCurrentDay() {
   const currentDate = new Date();
   const currentDay = daysOfWeek[currentDate.getDay()];
 
-  currentTime.textContent = `Current Day of The Week: ${currentDay}`;
+  currentTime.textContent = `${currentDay}`;
 
   // console.log(currentDay);
 }
@@ -31,7 +31,7 @@ function getUTCtime() {
   const currentMilliseconds = currentDate.getUTCMilliseconds();
   const currentUtcTime = `${currentHour}:${currentMinutes}:${currentSeconds}:${currentMilliseconds} UTC`;
 
-  utcTime.textContent = `Current UTC Time: ${currentUtcTime}`;
+  utcTime.textContent = `${currentUtcTime}`;
 }
 
 getUTCtime();
