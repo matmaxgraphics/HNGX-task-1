@@ -26,7 +26,8 @@ function getUTCtime() {
   const currentHour = currentDate.getUTCHours();
   const currentMinutes = currentDate.getUTCMinutes();
   const currentSeconds = currentDate.getUTCSeconds();
-  const currentUtcTime = `${currentHour}:${currentMinutes}:${currentSeconds} UTC`;
+  const currentMilliseconds = currentDate.getUTCMilliseconds();
+  const currentUtcTime = `${currentHour}:${currentMinutes}:${currentSeconds}:${currentMilliseconds} UTC`;
 
   utcTime.textContent = `Current UTC Time: ${currentUtcTime}`;
 }
