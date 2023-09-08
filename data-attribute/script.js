@@ -20,6 +20,8 @@ function getCurrentDay() {
 }
 getCurrentDay();
 
+setInterval(getCurrentDay, 1000)
+
 function getUTCtime() {
   const currentDate = new Date();
 
@@ -33,3 +35,4 @@ function getUTCtime() {
 }
 
 getUTCtime();
+setInterval(getUTCtime, 1000)
