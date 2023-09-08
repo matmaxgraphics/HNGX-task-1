@@ -24,12 +24,9 @@ setInterval(getCurrentDay, 1000)
 
 function getUTCtime() {
   const currentDate = new Date();
-
-  const currentHour = currentDate.getUTCHours();
-  const currentMinutes = currentDate.getUTCMinutes();
-  const currentSeconds = currentDate.getUTCSeconds();
-  const currentMilliseconds = currentDate.getUTCMilliseconds();
-  const currentUtcTime = `${currentHour},${currentMinutes},${currentSeconds},${currentMilliseconds} UTC`;
+  
+  const currentMilliseconds = getTime();
+  const currentUtcTime = currentMilliSeconds.toLocaleString();
 
   utcTime.textContent = `${currentUtcTime}`;
 }
