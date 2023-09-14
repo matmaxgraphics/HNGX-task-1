@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Box with React</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="hero-section">
+        <nav>
+            <div class="logo">
+                <img src="assets/images/Logo.png" alt="movie box logo">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="input-field" placeholder="What do you want to watch?">
+                <button><iconify-icon icon="fluent:search-24-regular"></iconify-icon></button>
+            </div>
+
+            <div class="right-side--nav">
+                <a href="#">Sign in</a>
+                <img src="assets/icons/Menu.png" alt="hamburger icon">
+            </div>
+        </nav>
+
+        <section class="banner-content--container">
+            <div class="banner-content">
+                <h1 class="movie-title">John Wick 3 : Parabellum</h1>
+                <div class="rating">
+                    <div class="imdb-rating flex-center">
+                        <img src="assets/icons/imdb.png" alt="">
+                        <small class="gray-900">86.0 / 100</small>
+                    </div>
+                    <div class="rotten-tomato-rating flex-center">
+                        <img src="assets/icons/rotten-tomato.png" alt="">
+                        <small class="gray-900">70%</small>
+                    </div>
+                </div>
+                <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14
+                    million price tag on his head, he is the target of hit men and women everywhere.</p>
+                <button class="btn"><iconify-icon icon="fluent:play-circle-24-filled"
+                        class="play-icon"></iconify-icon><span>WATCH
+                        TRAILER</span></button>
+            </div>
+        </section>
+    </main>
+    <div class="padding--wrapper">
+
+
+        <section class="featured-movie">
+            <header>
+                <h2>Featured Movie</h2>
+                <a href="#" class="link-btn">See more <iconify-icon
+                        icon="fluent:chevron-right-20-regular"></iconify-icon></a>
+            </header>
+            <article class="movies--container">
+                <div class="movie-card" data-testid="movie-card">
+                    <a href="movie-details.html" class="block-display">
+                        <img src="assets/images/Poster-1.png" alt="movie poster image" data-testid="movie-poster">
+                        <small class="gray-400" data-testid="movie-release-date">USA, 2016 - Current</small>
+                        <h5 class="movie-title gray-900" data-testid="movie-title">Stranger Things</h5>
+                    </a>
+                    <div class="rating-group">
+                        <div class="imdb-rating flex-center">
+                            <img src="assets/icons/imdb.png" alt="">
+                            <small class="gray-900">86.0 / 100</small>
+                        </div>
+                        <div class="rotten-tomato-rating flex-center">
+                            <img src="assets/icons/rotten-tomato.png" alt="">
+                            <small class="gray-900">70%</small>
+                        </div>
+                    </div>
+                    <small class="movie-tag gray-400">Action, Adventure, Horror</small>
+                </div>
+
+
+            </article>
+        </section>
+
+
+
+        <footer>
+            <div class="socials">
+                <a href="#"><img src="assets/icons/facebook.svg" alt=""></a>
+                <a href="#"><img src="assets/icons/instagram.svg" alt=""></a>
+                <a href="#"><img src="assets/icons/twitter.svg" alt=""></a>
+                <a href="#"><img src="assets/icons/youtube.svg" alt=""></a>
+            </div>
+
+            <div class="quick-links">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Press Room</a>
+            </div>
+            <p class="copyright gray-500">© <span>2021 MovieBox by Adriana Eka Prayudha</span></p>
+        </footer>
+
+
+
+    </div>
+</body>
+
+</html>

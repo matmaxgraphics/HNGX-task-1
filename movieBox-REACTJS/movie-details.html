@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Box with React</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="assets/images/Logo-2.png" alt="movie box logo">
+            </div>
+            <ul>
+                <li><a href="index.html" class="sidebar-link"><iconify-icon icon="fluent:home-24-regular"
+                            class="sidebar-icon"></iconify-icon> Home</a></li>
+                <li class="active"><a href="#" class="sidebar-link"><iconify-icon icon="fluent:video-24-regular"
+                            class="sidebar-icon"></iconify-icon> Movies</a></li>
+                <li><a href="#" class="sidebar-link"><iconify-icon icon="ph:monitor-play-bold"
+                            class="sidebar-icon"></iconify-icon> TV Series</a></li>
+                <li><a href="#" class="sidebar-link"><iconify-icon icon="fluent:calendar-24-regular"
+                            class="sidebar-icon"></iconify-icon> Upcoming</a></li>
+            </ul>
+
+            <div class="announcement">
+                <p>Play movie quizes and earn free tickets</p>
+                <small>50k people are playing now</small>
+
+                <button class="btn">Start Playing</button>
+            </div>
+
+            <div class="logout">
+                <a><iconify-icon icon="heroicons-outline:logout" class="sidebar-icon"></iconify-icon> Logout</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <section class="movie-banner">
+                <!-- <img src="assets/images/banner-bg.png" alt="movie banner image"> -->
+                <span><iconify-icon icon="fluent:play-24-filled" class="banner-icon"></iconify-icon>
+                    <p>Watch Trailer</p>
+                </span>
+            </section>
+            <main class="details-wrapper">
+                <section class="movie-info">
+                    <div class="movie-data">
+                        <header>
+                            <h5 class="movie-title">Top Gun: Maverick</h5>
+                            <span class="circle"></span>
+                            <h5 class="movie-release-year">2022</h5>
+                            <span class="circle"></span>
+                            <h5 class="movie-rating">PG-13</h5>
+                            <span class="circle"></span>
+                            <h5 class="movie-duration">2h 10m</h5>
+                        </header>
+
+                        <div class="movie-tags">
+                            <button>Action</button>
+                            <button>Drama</button>
+                        </div>
+                    </div>
+
+                    <div class="movie-details">
+                        <p class="movie-overview">After thirty years, Maverick is still pushing the envelope as a top
+                            naval aviator,
+                            but must confront ghosts of his past when he leads TOP GUN's elite graduates
+                            on a mission that demands the ultimate sacrifice from those chosen to fly it.</p>
+
+                        <div class="movie-casts">
+                            <h5>Director: <span>Joseph Kosinski</span></h5>
+                            <h5>Writers: <span>Jim Cash, Jack Epps Jr, Peter Craig</span></h5>
+                            <h5>Stars: <span>Tom Cruise, Jennifer Connelly, Miles Teller</span></h5>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta-section">
+                    <div class="flex-end">
+                        <div class="star-rating"><img src="assets/icons/Star.png" alt=""><span><i></i>8.5</span> | 350k</div>
+    
+                        <div class="btn-group">
+                            <button>
+                                <img src="assets/images/Two Tickets.svg" alt="">See Showtime
+                            </button>
+                            <button class="cta-btn">
+                                <iconify-icon icon="fluent:text-bullet-list-24-regular" class="btn-icon"></iconify-icon> More Watch Options
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cta-image">
+                        <img src="assets/images/cta-image.png" alt="">
+                        <p><iconify-icon icon="fluent:text-bullet-list-24-regular"></iconify-icon> The Best Movies and Shows in September</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
